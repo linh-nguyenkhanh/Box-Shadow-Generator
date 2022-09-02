@@ -1,0 +1,86 @@
+*{
+  font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+  font-weight: 500;
+  color: #850E35;
+  
+}
+.box-shadow-generator{
+width: 900px;
+box-shadow: 0 0 40px -8px rgba(0, 0, 0, 0.3);
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: relative;
+
+}
+
+.box-shadow-generator .controls{
+  padding: 30px;
+  width:400px;
+}
+
+.box-shadow-generator .controls h2{
+  font-size: 18px;
+  margin: 4px 0;
+  font-weight: 300;
+  color: #850E35;
+}
+.box-shadow-generator .controls .group{
+  padding: 12px 24px;
+  margin: 8px 0;
+}
+
+.box-shadow-generator .controls .container{
+  display:flex;
+  justify-content: space-between;
+}
+.box-shadow-generator .controls .control{
+  width:100%;
+}
+.box-shadow-generator .controls input[type="color"]{
+  width:60px;
+  height: 30px;
+}
+/* flex:1 take up the maximum space it can */
+.box-shadow-generator .result{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  flex: 1; 
+}
+/* box has relative with the box shadow generator, so set box-shadow-generator to position:relative */
+.box-shadow-generator .result .box{
+  
+  width:240px;
+  height: 240px;
+  background: white;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+}
+
+.box-shadow-generator .result  
+.generate-code-btn{
+position: absolute;
+margin-right: 125px;
+margin-bottom: 20px;
+bottom: 8px;
+right: 8px;
+padding: 12px 48px;
+font-size: 18px;
+font-weight: bold;
+border: none;
+background:#850E35 ;
+color: white;
+cursor: pointer;
+border-radius: 8px;
+}
+
