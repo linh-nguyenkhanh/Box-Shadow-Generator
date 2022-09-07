@@ -49,9 +49,9 @@ controls.forEach((c) => {
 
 const generateCode = () => {
   if (insetValue) {
-    code.innerHTML = `box.shadow: inset ${xValue}px ${yValue}px ${blurValue}px ${spreadValue}px ${colorValue}`;
+    code.innerHTML = `box-shadow: inset ${xValue}px ${yValue}px ${blurValue}px ${spreadValue}px ${colorValue}`;
   } else {
-    code.innerHTML = `box.shadow: ${xValue}px ${yValue}px ${blurValue}px ${spreadValue}px ${colorValue}`;
+    code.innerHTML = `box-shadow: ${xValue}px ${yValue}px ${blurValue}px ${spreadValue}px ${colorValue}`;
   }
   hljs.highlightAll();
 };
